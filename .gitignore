@@ -1,0 +1,56 @@
+# Chaos Database .gitignore
+
+# Exclude actual client data and reconnaissance results
+*/*/assets.txt
+*/*/roots.txt
+*/*/temp/
+*/*/subfinder.txt
+*/*/httpx*.txt
+*/*/nuclei*.txt
+*/*/nmap*.txt
+*/*/amass*.txt
+*/*/gobuster*.txt
+*/*/*.json
+*/*/*.xml
+*/*/*.csv
+
+# Exclude log files
+*.log
+logs/
+
+# Exclude temporary and cache files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Exclude sensitive configuration
+config.json
+secrets.txt
+api_keys.txt
+
+# Exclude large data files
+*.zip
+*.tar.gz
+*.7z
+
+# Exclude OS specific files
+*.lnk
+desktop.ini
+
+# Exclude PowerShell execution policy files
+*.ps1xml
+
+# Include only our management scripts and documentation
+!uni_run.ps1
+!uni_run.sh
+!organize_folders.ps1
+!README.md
+!QUICK_REFERENCE.md
+!LICENSE
+!.gitignore
+
+# Include sample/template files if they exist
+!**/sample_*
+!**/template_*
+!**/example_*
